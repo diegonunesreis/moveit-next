@@ -1,0 +1,19 @@
+.container {
+    /* queremos pegar 100% do viewport height */
+    height: 100vh;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container section {
+    flex: 1;
+    display: grid;   
+     /* as duas colunas terão o mesmo tamanho horizontal  */
+    grid-template-columns: 1fr 1fr;
+    gap: 6.25rem;
+    /* todo conteudo do grid será alinhado ao centro */
+    align-content: center;
+}
